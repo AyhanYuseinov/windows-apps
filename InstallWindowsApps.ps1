@@ -43,8 +43,8 @@ choco install microsoft-teams -y
 
 
 # PhpStorm
-$PhpStorm = 'https://download.jetbrains.com/webide/PhpStorm-2020.3.3.exe'
-$PhpStormPath = Join-Path $InstallersDirectory 'PhpStorm.exe'
+$PhpStorm = 'https://download.jetbrains.com/webide/PhpStorm-2023.3.2.exe'
+$PhpStormPath = Join-Path $InstallersDirectory 'PhpStorm-2023.3.2.exe'
 
 # Download the PhpStorm installer
 Invoke-WebRequest -Uri $PhpStorm -OutFile $PhpStormPath
@@ -55,18 +55,18 @@ Start-Process -FilePath $PhpStormPath -ArgumentList "/S" -Wait
 
 
 # PyCharm Professional Edition
-$PyCharm = 'https://download.jetbrains.com/python/pycharm-professional-2020.3.3.exe'
-$PyCharmPath = Join-Path $InstallersDirectory 'PyCharm.exe'
+$PyCharm = 'https://download.jetbrains.com/python/pycharm-professional-2023.3.2.exe'
+$PyCharmPath = Join-Path $InstallersDirectory 'PyCharm-2023.3.2.exe'
 Invoke-WebRequest -Uri $PyCharm -OutFile $PyCharmPath
 Start-Process -FilePath $PyCharmPath -ArgumentList "/S" -Wait
 
 
 
 # IntelliJ
-$IntelliJ = 'https://download.jetbrains.com/idea/ideaIU-2020.3.3.exe'
-$IntelliJPath = Join-Path $InstallersDirectory 'IntelliJ.exe'
+$IntelliJ = 'https://download.jetbrains.com/idea/ideaIU-2023.3.2.exe'
+$IntelliJPath = Join-Path $InstallersDirectory 'IntelliJ-2023.3.2.exe'
 Invoke-WebRequest -Uri $IntelliJ -OutFile $IntelliJPath
-Start-Process -FilePath $IntelliJPath -ArgumentList '/S' -Wait
+Start-Process -FilePath $IntelliJPath -ArgumentList "/S" -Wait
 
 
 
@@ -81,7 +81,7 @@ choco install postman -y
 
 # Wireshark
 #choco install wireshark -y # -> a lot of lines telling you what happens
-choco install wireshark --installargs '"/S"' -y
+choco install wireshark --installargs "/S" -y
 
 
 

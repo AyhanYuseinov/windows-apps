@@ -89,6 +89,7 @@ ps2exe InstallWindowsApps.ps1 InstallWindowsApps.exe
 ```
 
 Navigate to `C:\My Programs\PowerShell Scripts`  
+
 Run InstallWindowsApps.exe as Administrator
 
 ## Licence
